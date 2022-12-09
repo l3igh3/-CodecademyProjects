@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    color: black;
+    background-color: white;
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  a {
+    color: black;
+  }
+  
+  h2,
+  h3,
+  h4,
+  p {
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10%;
+  }
+  
+  .navbar p {
+    display: inline-block;
+    padding: 10px 10px;
+  }
+  
+  .main {
+    padding-top: 35px;
+    opacity: 0.9;
+  }
+  
+  .mission {
+    display: flex;
+    height: 300px;
+    background-image: url("/Users/leighperez/Downloads/flexbox-business-site-starting/Images/taco2.png");
+    padding-top: 35px;
+  }
+  
+  .mission .content {
+    margin: auto;
+    background-color: white;
+    width: 100%;
+  }
+
+.menu {
+    background-image:url("/Users/leighperez/Downloads/flexbox-business-site-starting/Images/tacos3.jpeg");
+    background-size: contain;
+    background-repeat: repeat-y;
+}
+
+  #menu {
+    min-height: 500px;
+    margin: auto;
+    padding-top: 70px;
+  }
+  
+  
+  .team {
+    background-image: url("/Users/leighperez/Downloads/flexbox-business-site-starting/Images/taco2.png");
+    padding-top: 70px;
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .teammate {
+    padding: 10px;
+    color: black;
+    flex-basis: 280px;
+    font-weight: bold;
+  }
+  
+  .teammate img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: auto;
+  }
+  
+  .contact,
+  .copyright {
+    padding-top: 20px;
+  }

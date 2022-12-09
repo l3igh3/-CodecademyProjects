@@ -1,0 +1,32 @@
+body {
+    font-family: monospace, sans-serif;
+    background-color: black;
+  }
+  
+  h1 {
+    text-align: center;
+    color: yellow;
+  }
+  
+  h2 {
+    color: crimson;
+    text-align: center;
+  }
+  
+  table {
+    border: 2px solid yellow;
+    width: 650px;
+    margin: 0 auto;
+    background-color: midnightblue;
+    color: lime;
+  }
+  
+  thead {
+    background-color: midnightblue;
+    color: crimson;
+  }
+  
+  td {
+    border-top: 1px solid darkorchid;
+  }
+  

@@ -1,0 +1,19 @@
+.banner{
+    background-color:blueviolet;
+    color: black;
+    margin-top: 75px;
+    text-align: center;
+    padding: 100px 0;
+}
+#small-muppet{
+    height: 500px;
+    width: 500px;
+
+}
+#gritter{
+    color:#FFA500;
+    font-size:100px;
+}
+.bold{
+    font-weight: 900;
+}
