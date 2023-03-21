@@ -54,7 +54,7 @@ html {
   }
   
   .navigation {
-    margin: var(--spacing-2);
+    margin: var(--spacing-1);
   }
   
   .portrait {
@@ -69,6 +69,13 @@ html {
   
   .about-me-text-container {
     margin-right: var(--spacing-3);
+  }
+
+  .fa-brands {
+    width:42px;
+    height:42px;
+    margin: var(--spacing-0);
+    display: inline;
   }
 
   a {
