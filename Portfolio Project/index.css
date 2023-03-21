@@ -1,0 +1,116 @@
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Oriya&family=Playfair+Display&family=Source+Sans+Pro:wght@400;600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    color: var(--font-color);
+  }
+
+  :root {
+    --spacing-1: 8px;
+    --spacing-2: 12px;
+    --spacing-3: 16px;
+    --spacing-4: 24px;
+  
+    --border-radius: 12px;
+  
+    --font-color: #323232;
+  }
+  
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    margin-bottom: var(--spacing-2);
+  }
+  
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0 var(--spacing-3);
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-3) 0;
+  }
+
+  .nav-items {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+    margin-left: auto;
+  }
+  
+  .navigation {
+    margin: var(--spacing-2);
+  }
+  
+  .portrait {
+    width: 250px;
+    border-radius: var(--border-radius);
+    flex-shrink: 0;
+  }
+  
+  .about-me-container {
+    display: flex;
+  }
+  
+  .about-me-text-container {
+    margin-right: var(--spacing-3);
+  }
+
+  a {
+    color: var(--font-color);
+    text-decoration: none;
+    font-weight: 600;
+  } 
+  
+  /* unvisited link */
+  a:link {
+    color: blue;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: purple;
+    text-decoration: underline;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+    text-decoration: underline;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+    text-decoration: underline;
+  }
+  .project-title h3 {
+    display: inline;
+  }
+  
+  details {
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .about-me-container {
+      flex-direction: column;
+    }
+  }
+  
