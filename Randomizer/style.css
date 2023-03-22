@@ -21,10 +21,11 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 5px;
+    
 }
 
 span {
-    display: block;
+    display: flexbox;
     text-align: center;
     font-size: 24px;
     letter-spacing: 1.5px;
@@ -50,7 +51,7 @@ p {
     margin-bottom: 30px;
 }
 
-h1{
+h1 {
     color: violet;
     text-align: center;
     font-size: 1.5rem;
@@ -59,7 +60,7 @@ h1{
 }
 
 .button-new-joke {
-    display: block;
+    display: flexbox;
     background-color: #0354ab;
     border: none;
     padding: 5px;
@@ -74,4 +75,33 @@ h1{
 }
 .button-new-joke:hover {
     cursor: pointer;
+}
+
+@media screen and (max-width: 760px) {
+    html {
+        display: center;
+        padding: 1vw;
+        padding: 1vh;
+    }
+    
+    body {
+        display: center;
+        padding: 1vw;
+        padding: 1vh;
+        margin: auto;
+    }
+
+    p.joke-text {
+        overflow: visible;
+    }
+    
+    div.box {
+        display: center;
+        padding: 1vw;
+        padding: 1vh;
+        text-align: center;
+        inline-size: auto;
+    }
+    
+    
 }
