@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Oriya&family=Playfair+Display&family=Source+Sans+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Oriya&family=Playfair+Display&family=Source+Sans+Pro:wght@400;600&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -30,7 +30,6 @@ html {
   
   body {
     font-family: 'Source Sans Pro', sans-serif;
-    margin: 0;
     padding: 0 var(--spacing-3);
     max-width: 900px;
     margin: 0 auto;
@@ -60,7 +59,7 @@ html {
   .portrait {
     width: 250px;
     border-radius: var(--border-radius);
-    flex-shrink: 1;
+    flex-shrink: 0;
   }
   
   .about-me-container {
@@ -100,6 +99,7 @@ html {
   a:hover {
     color: hotpink;
     text-decoration: underline;
+    cursor: pointer;
   }
   
   /* selected link */
@@ -113,6 +113,11 @@ html {
   
   details {
     cursor: pointer;
+  }
+  
+  .image-links {
+    cursor: pointer;
+    margin: auto;
   }
 
   @media only screen and (max-width: 600px) {
