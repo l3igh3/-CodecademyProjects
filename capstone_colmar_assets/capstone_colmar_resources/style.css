@@ -1,0 +1,43 @@
+/*--------------------------------------
+Universal Styles
+--------------------------------------*/
+
+html {
+    font-size: 16px;
+    color: #4A4A4A;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 90rem;
+}
+
+h1 {
+    font-size: 3.125rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #002e54;
+}
+
+.h2-white {
+    color: #fff;
+}
+
+h3 {
+    font-size: 1.3125rem;
+    color: #002e54;
+}
+
+.h3-white {
+    color: #fff;
+}
