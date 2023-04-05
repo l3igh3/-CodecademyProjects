@@ -22,11 +22,11 @@ class Field {
             this.print();
             this.promptUser();
             if (!this.isInBounds()) {
-                console.log('Out of bounds!');
+                console.log('Out of bounds! GAME OVER');
                 playing = false;
                 break;
             } else if (this.isHole()) {
-                console.log('Oh no, we fell in a hole!');
+                console.log('Oh no, we fell in a hole! GAME OVER');
                 playing = false;
                 break;
             } else if (this.isHat()) {
