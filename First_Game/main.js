@@ -4,8 +4,7 @@ const hat = '^';
 const hole = 'O';
 const fieldCharacter = '░';
 const pathCharacter = '*';
-
-
+let playing = true;
 
 class Field {
     constructor(field = [[]]) {
@@ -16,8 +15,7 @@ class Field {
     }
 
     //Start Game
-    startGame() {
-        let playing = true;
+   startGame() { 
          while(playing) {
             this.print();
             this.promptUser();
@@ -28,32 +26,36 @@ class Field {
             } else if (this.isHole()) {
                 console.log('Oh no, we fell in a hole! GAME OVER');
                 playing = false;
+                this.playAgain();
+                console.log(' '); //break in prompt
                 break;
-            } else if (this.isHat()) {
+              } else if (this.isHat()) {
                 console.log('Congrats, you found my hat!');
                 playing = false;
                 break;
-            }
+              } 
+            
 
             //Update location of user on map
             this.field[this.y][this.x] = pathCharacter; 
             
         }
     }
+
     //Ask user for input
     promptUser() {
         const answer = prompt('Which way?: ');
         switch (answer) {
-            case 'u':
+            case 'U'||'u':
                this.y -= 1;
                 break;
-            case 'd':
+            case 'd'|| 'D':
                this.y += 1;
                 break;
-            case 'l':
+            case 'l'||'L':
                this.x -= 1;
                 break;
-            case 'r':
+            case 'r'||'R':
                 this.x += 1;
                 break;
             default:
@@ -62,6 +64,7 @@ class Field {
                 break;
         }
     }
+   
      //in Bounds
      isInBounds() {
         return (
@@ -85,10 +88,10 @@ class Field {
           }).join('\n');
         console.log(displayString);
       }
-      
+  
       //Generate field
       static generateField(height, width, percentage = 0.1) {
-        const field = new Array(height).fill(0).map(el => new Array(width));
+        let field = new Array(height).fill(0).map(el => new Array(width));
         for (let y = 0; y < height; y++) {
           for (let x = 0; x < width; x++) {
             const prob = Math.random();
@@ -109,12 +112,23 @@ class Field {
           field[hatLocation.haty][hatLocation.hatx] = hat;
           return field;
         }
+
+         //promt user to play again
+    playAgain() {
+      const again = prompt('Play Again?(y/n): ')
+      switch(again) {
+        case 'y':
+          myfield.startGame();
+          break;
+        case 'n':
+          console.log('Okay, bye!');
+          break;
+      }
+    }
     
 }
-
-
 const myfield = new Field(Field.generateField(10, 10, 0.2));
-myfield.startGame();
+myfield.startGame(new Field);
 
 
   
